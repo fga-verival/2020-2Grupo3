@@ -1,0 +1,11 @@
+FROM gradle:7.0.0-jdk8
+
+ARG ARGS
+
+ENV EXTRA_ARGS=$ARGS
+
+WORKDIR /home
+
+COPY . ./
+
+CMD gradle $EXTRA_ARGS

@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  cdb-build:
+    container_name: odeio_java_build
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ARGS: build
+    volumes:
+      - .:/home
+  cdb-test:
+    container_name: odeio_java_test
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ARGS: test
+    volumes:
+      - .:/home
+  cdb-run:
+    container_name: odeio_java_run
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ARGS: run
+    volumes:
+      - .:/home
