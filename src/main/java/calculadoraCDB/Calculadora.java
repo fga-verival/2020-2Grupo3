@@ -1,11 +1,22 @@
 package calculadoraCDB;
 
 public class Calculadora {
-    public String getGreeting() {
-        return "Hello World!";
+
+    private double initalValue;
+    private double interest;
+    private double tempo;
+
+    public Calculadora(double initalValue, double interest, double tempo) {
+        this.initalValue = initalValue;
+        this.interest = interest;
+        this.tempo = initalValue;
     }
 
     public static void main(String[] args) {
-        System.out.println(new Calculadora().getGreeting());
+
+    }
+
+    public double getRendimentoBruto(){
+        return 13.97F; // Falsificação
     }
 }
