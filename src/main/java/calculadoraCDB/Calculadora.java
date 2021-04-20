@@ -11,7 +11,10 @@ public class Calculadora {
         this.valorInicial = valorInicial;
         this.juros = juros;
         this.tempo = tempo;
-        aliquota = 0F;
+        if(tempo <= 180) aliquota = 22.5F;
+        else if(tempo <= 360) aliquota = 20F;
+        else if(tempo <=720) aliquota = 17.5F;
+        else aliquota = 15F;
     }
 
     public double getRendimentoBruto(){
@@ -19,7 +22,7 @@ public class Calculadora {
     }
 
     public double getImpostoRenda(){
-        return 3.14;  // Falsificação
+        return getRendimentoBruto()*(aliquota/100);
     }
 
     public static void main(String[] args) {
