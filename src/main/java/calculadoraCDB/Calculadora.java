@@ -18,6 +18,10 @@ public class Calculadora {
         return (valorInicial*tempo*juros)/(100*365);
     }
 
+    public double getImpostoRenda(){
+        return 3.14;  // Falsificação
+    }
+
     public static void main(String[] args) {
 
     }
