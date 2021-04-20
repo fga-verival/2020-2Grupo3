@@ -6,8 +6,7 @@ import static org.junit.Assert.*;
 import calculadoraCDB.Calculadora;
 
 public class TesteImpostoRenda {
-    @Test public void testAppHasAGreeting() {
-        Calculadora classUnderTest = new Calculadora();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    @Test public void TesteCalculoImpostoRenda1() {
+        fail("Not Implemented Yet");
     }
 }
