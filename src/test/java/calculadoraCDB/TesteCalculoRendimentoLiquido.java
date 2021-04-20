@@ -7,5 +7,6 @@ import calculadoraCDB.Calculadora;
 
 public class TesteCalculoRendimentoLiquido {
     @Test public void TesteCalculoRendimentoLiquido() {
+        fail("Not Implemented Yet");
     }
 }
