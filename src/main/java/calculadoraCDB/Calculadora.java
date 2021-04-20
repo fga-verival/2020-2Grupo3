@@ -26,7 +26,7 @@ public class Calculadora {
     }
 
     public double getRendimentoLiquido(){
-        return 1.0829; // Falsificação  
+        return ((valorInicial + getRendimentoBruto() - getImpostoRenda())/valorInicial)*100 -100; 
     }
 
 
