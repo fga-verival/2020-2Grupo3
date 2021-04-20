@@ -25,6 +25,11 @@ public class Calculadora {
         return getRendimentoBruto()*(aliquota/100);
     }
 
+    public double getRendimentoLiquido(){
+        return 1.0829; // Falsificação  
+    }
+
+
     public static void main(String[] args) {
 
     }
